@@ -70,7 +70,7 @@ div {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #FFC90E;
+  background-color: green;
  
 }
 
@@ -100,7 +100,7 @@ div {
 
 section {
 	display: block;
-    background-color: #FFC90E;
+    background-color: #000000;
     margin-top: 10px;
     padding: 5px;
     margin-bottom: 10px;
