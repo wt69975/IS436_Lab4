@@ -1,0 +1,133 @@
+<html>
+
+<head>
+	<title> Department of Information System-UMBC </title>
+	<link rel="stylesheet" href="StyleHome.css">
+	
+	<script type = "text/javascript">
+
+		function validate() {
+
+			let x = document.forms["myForm"]["fname"].value;
+			if (x == "" || x.length < 3 || !isNaN(x)) {
+			alert("Please type correct name, cannot be less then 3 letters and cannot have special or number letters");
+			return false;
+			}
+			
+
+			if( document.myForm.email.value == "" ) {
+			alert( "Enter a valid email address!" );
+			return false;
+			}
+			
+			if(document.myForm.email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+			return true;
+			}
+			alert( "Enter a valid email address!" );
+			return false;
+
+			}
+	</script>
+	
+</head>
+	
+<body>	
+	</div>
+	<section class="news-nav">
+		<header class = "banner">
+			<img src= "https://umbc.edu/wp-content/uploads/2022/02/umbc-primary-logo-250x58.png" alt="UMBC Logo"/>
+			
+			
+			<Div class="navbar">
+				<a href="index.html"> Home </a>
+				<a href="Contact.html"> Contact Us </a>
+				<Div class="dropdown">
+					<button class="dropbtn"> Program </button>
+						<Div class="dropdown-content">
+							<a href=""> <B> Undergraduate </B></a>
+							<a href=""> <B> Graduate </B></a>
+							<a href=""> <B> Research </B></a>
+						</Div>
+				</Div>
+			</Div>	
+		</header>
+	</section>
+	</div>
+	
+	
+	<Div>
+	<section class="news-nav">
+		<h1> Contact Us </h1>
+		<p> Give us two business days to reply </p>
+	</section>
+	</Div>
+	
+	
+	<Div class="pagebody"> 
+		<section class="news-nav">
+		
+			<form name="myForm" action="/action_page.php" onsubmit="return validate()" method=post>
+				<label for="fname">Name <span> * </span></label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+				<label for="email"> Email <span> * </span></label>
+				<input type="text" id="email" name="email" placeholder="Your E-mail.."><br>
+				
+				<label for="phone"> Phone </label><br>
+				<input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" 
+				pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+				<label for="program">Program</label>
+				<select id="program" name="program">
+					<option value="select">Select...</option>
+					<option value="undergraduate">Undergraduate</option>
+					<option value="graduate">Graduate</option>
+					<option value="research">Research</option>
+					<option value="other">Other</option>
+				</select><br>
+
+				
+					
+				<label for="Message">Message</label>
+				<textarea id="message" name="message" placeholder="Write you message.." style="height:200px"></textarea><br>
+
+				<input type="submit" value="Submit">
+			</form>
+			
+		</section>
+	</Div>
+	
+	<Div class="footer">
+		
+		
+		<table width="90%">
+			<tr>
+				<td width="50%">
+				</br></br>
+					<img src="https://styleguide.umbc.edu/wp-content/uploads/sites/113/2019/03/UMBC-primary-logo-CMYK-on-black.png" 
+					alt="footer logo" style="weidth:120px; height:60px;"> </br></br>
+					<p style="color: white"> University of Maryland, Baltimore County <br>
+					1000 Hilltop Circle, Baltimore, MD 21250 </p> </br></br>
+				</td>
+				
+				<td width="20%">
+					<p style="color: white"> <b>Resources</b> </p>
+					<p style="color: #FFC90E"> Alumni </br> Career center
+					</br> Events </br> Get Help </br> News </br> Visit Campus </br> Work at UMBC</p>
+				</td>
+				
+				<td width="20%">
+					<p style="color: white"> <b>Important Contacts</b> </p>
+					<p style="color: #FFC90E"> Online Directory </br>Contact UMBC
+					</br> Request Support</p>
+					<p style="color: white"> <b>Emergency Info</b> </p>
+					<p style="color: #FFC90E"> UMBC Police: 410-455-5555 </br>Sign Up for Text Alerts</p>
+				</td>
+			</tr>
+		</table>		
+	</Div>
+	
+</body>
+
+
+</html>
